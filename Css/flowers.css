@@ -15,7 +15,7 @@ body {
 /* Encabezado */
 .hero {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px; /* Incrementa el espacio inferior */
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -85,6 +85,37 @@ canvas {
         font-size: 1.4rem;
     }
 }
+
+/* Ajuste para pantallas más pequeñas como iPhone 11 */
+@media (max-width: 828px) {
+    .hero {
+        margin-bottom: 80px; /* Más espacio en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Ajustar el tamaño del texto del título */
+    }
+
+    p {
+        font-size: 1.4rem; /* Ajustar el tamaño del mensaje */
+    }
+}
+
+/* Ajustes para pantallas más pequeñas como el iPhone SE */
+@media (max-width: 375px) {
+    .hero {
+        margin-bottom: 100px; /* Aumentar más el espacio para pantallas muy pequeñas */
+    }
+
+    h1 {
+        font-size: 2rem; /* Ajustar más el tamaño del texto en pantallas pequeñas */
+    }
+
+    p {
+        font-size: 1.2rem; /* Ajustar el mensaje para pantallas pequeñas */
+    }
+}
+
 /* Texto pequeño al final */
 .small-text {
     font-size: 0.8rem; /* Tamaño pequeño del texto */
