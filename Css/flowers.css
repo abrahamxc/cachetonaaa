@@ -15,7 +15,8 @@ body {
 /* Encabezado */
 .hero {
     text-align: center;
-    margin-bottom: 50px; /* Incrementa el espacio inferior */
+    margin-top: 40px;  /* Espacio superior para evitar que se superponga */
+    margin-bottom: 60px; /* Incrementa el espacio inferior */
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -75,44 +76,34 @@ canvas {
     }
 }
 
-/* Para dispositivos más pequeños */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.8rem;
-    }
-
-    p {
-        font-size: 1.4rem;
-    }
-}
-
-/* Ajuste para pantallas más pequeñas como iPhone 11 */
+/* Ajustes para pantallas más pequeñas como iPhone */
 @media (max-width: 828px) {
     .hero {
-        margin-bottom: 80px; /* Más espacio en pantallas pequeñas */
+        margin-top: 60px; /* Mayor espacio superior en pantallas pequeñas */
+        margin-bottom: 80px; /* Mayor espacio inferior en pantallas pequeñas */
     }
 
     h1 {
-        font-size: 2.5rem; /* Ajustar el tamaño del texto del título */
+        font-size: 2.5rem; /* Reducir el tamaño del título */
     }
 
     p {
-        font-size: 1.4rem; /* Ajustar el tamaño del mensaje */
+        font-size: 1.4rem; /* Reducir el tamaño del mensaje */
     }
 }
 
-/* Ajustes para pantallas más pequeñas como el iPhone SE */
 @media (max-width: 375px) {
     .hero {
-        margin-bottom: 100px; /* Aumentar más el espacio para pantallas muy pequeñas */
+        margin-top: 80px;  /* Aumentar más el margen superior */
+        margin-bottom: 100px; /* Mayor espacio inferior en pantallas más pequeñas */
     }
 
     h1 {
-        font-size: 2rem; /* Ajustar más el tamaño del texto en pantallas pequeñas */
+        font-size: 2rem; /* Ajustar el tamaño del título en pantallas pequeñas */
     }
 
     p {
-        font-size: 1.2rem; /* Ajustar el mensaje para pantallas pequeñas */
+        font-size: 1.2rem; /* Ajustar el tamaño del mensaje en pantallas pequeñas */
     }
 }
 
@@ -126,7 +117,7 @@ canvas {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Para pantallas más pequeñas como iPhone 11 */
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 828px) {
     .small-text {
         font-size: 0.7rem;  /* Aún más pequeño en pantallas pequeñas */
@@ -134,10 +125,10 @@ canvas {
     }
 }
 
-/* Para pantallas aún más pequeñas (como iPhone SE o pantallas de 375px) */
 @media (max-width: 375px) {
     .small-text {
         font-size: 0.6rem;  /* Reducir aún más el tamaño del texto */
         margin-top: 5px;    /* Menos espacio superior */
     }
 }
+
