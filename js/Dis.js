@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cambiar el título y el mensaje automáticamente cada cierto tiempo
     const titleTexts = [
-        "✨ Flores para Ti ✨",
+        "CACHETONA PRECIOSAA!",
         "✨ ¡Estas flores son para ti! ✨"
     ];
 
     const messageTexts = [
-        "🌷 Eres tan especial como estas flores 🌷",
-        "🌻 ¡Tan únicas como tú! 🌻"
+        "Me tomo una hora JAJA",
+        "NO HAY CHUPADON DE CHICHI PARA LA MUÑECA 😞"
     ];
 
     let titleIndex = 0;
