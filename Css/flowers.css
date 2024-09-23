@@ -15,13 +15,13 @@ body {
 /* Encabezado */
 .hero {
     text-align: center;
-    margin-top: 40px;  /* Espacio superior para evitar que se superponga */
-    margin-bottom: 60px; /* Incrementa el espacio inferior */
+    margin-top: 60px;  /* Aumentar el espacio superior */
+    margin-bottom: 80px; /* Aumentar el espacio inferior */
     animation: fadeIn 2s ease-in-out;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3.5rem; /* Reducir el tamaño del título para evitar superposición */
     color: #FFB300;
     letter-spacing: 1.5px;
     text-shadow: 2px 2px 4px rgba(255, 179, 0, 0.5);
@@ -29,15 +29,16 @@ h1 {
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 1.6rem; /* Reducir ligeramente el tamaño del mensaje */
     color: #FFA000;
     text-shadow: 1px 1px 3px rgba(255, 160, 0, 0.5);
+    margin-top: 10px;  /* Aumentar espacio entre título y mensaje */
 }
 
 /* Canvas */
 .canvas-container {
     width: 100vw;
-    height: 70vh;
+    height: 65vh; /* Reducir la altura del canvas para hacer más espacio al texto */
     display: block;
     position: relative;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -79,22 +80,22 @@ canvas {
 /* Ajustes para pantallas más pequeñas como iPhone */
 @media (max-width: 828px) {
     .hero {
-        margin-top: 60px; /* Mayor espacio superior en pantallas pequeñas */
-        margin-bottom: 80px; /* Mayor espacio inferior en pantallas pequeñas */
+        margin-top: 80px; /* Mayor espacio superior en pantallas pequeñas */
+        margin-bottom: 90px; /* Mayor espacio inferior en pantallas pequeñas */
     }
 
     h1 {
-        font-size: 2.5rem; /* Reducir el tamaño del título */
+        font-size: 2.5rem; /* Reducir más el tamaño del título */
     }
 
     p {
-        font-size: 1.4rem; /* Reducir el tamaño del mensaje */
+        font-size: 1.3rem; /* Reducir el tamaño del mensaje */
     }
 }
 
 @media (max-width: 375px) {
     .hero {
-        margin-top: 80px;  /* Aumentar más el margen superior */
+        margin-top: 90px;  /* Aumentar más el margen superior */
         margin-bottom: 100px; /* Mayor espacio inferior en pantallas más pequeñas */
     }
 
@@ -131,4 +132,3 @@ canvas {
         margin-top: 5px;    /* Menos espacio superior */
     }
 }
-
